@@ -11,10 +11,6 @@
 // number는 1자리 이상 1,000,000자리 이하인 숫자입니다.
 // k는 1이상 number의 자릿수 미만인 자연수입니다.
 
-// && : 논리and 연산자 expr 1 && expr 2 -> expr 1을 true로 변환할 수 있는 경우 expr2를 반환하고 그렇지 않으면 expr1을 반환한다.
-// || : 논리or 연산자 expr 1 || expr 2 -> expr 1을 true로 변환할 수 있으면 expr1을 반환하고 그렇지 않으면 expr2를 반환합니다.
-// split() : 문자열을 separator로 잘라서 limit크기 이하의 배열에 잘라진 문자열을 리턴한다.
-// join() : 메서드는 배열의 모든 요소를 연결해서 하나의 문자열로 만듭니다.
 
 function solution(number, k) {
     let stack = []; // b : 최종 글자들이 저장될 스택

@@ -42,11 +42,16 @@ function solution(n, costs) {
         // 2-1. start 섬은 연결 된 상태에 end 섬은 연결 안된 경우
         // 2-2. 혹은 end 섬은 연결 된 상태에 start 섬은 연결 안된 경우
         if (
-          !bridge[i] &&
-          ((island[start] && !island[end]) || (!island[start] && island[end]))
+            // 1. 
+            !bridge[i] &&
+            // 2.
+            ((island[start] && !island[end]) 
+            // 3.
+            || (!island[start] && island[end]))
         ) {
           //해당 섬/다리/비용 정보 추가
-          island[start] = true
+          // true로 변환을 할 수 있도록 정보 추가
+          island[start] = true 
           island[end] = true
           bridge[i] = true
           answer += cost
