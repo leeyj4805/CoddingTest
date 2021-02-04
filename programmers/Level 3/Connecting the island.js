@@ -44,9 +44,9 @@ function solution(n, costs) {
         if (
             // 1. 
             !bridge[i] &&
-            // 2.
+            // 2-1.
             ((island[start] && !island[end]) 
-            // 3.
+            // 2-2.
             || (!island[start] && island[end]))
         ) {
           //해당 섬/다리/비용 정보 추가
