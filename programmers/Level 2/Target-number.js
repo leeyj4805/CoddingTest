@@ -18,14 +18,14 @@
 function solution(numbers, target) {
     let answer = 0;
     
-    dfs(0, 0);
+    dfs(0, 0); // dfs를 0,0에서 시작한다.(초기값)
     
     function dfs(index, sum) {
-        if(index === numbers.length) {
-            if (sum === target) {
-                answer++;
+        if(index === numbers.length) { // 탈출을 하는 조건 index가 number의 길이가 같다면
+            if (sum === target) { // 탈출을 하기 전 sum과 target이 같다면
+                answer++; // answer를 더한다.
              }
-            return;
+            return; // index와 numbers.length가 같으면 재귀에서 빠져나온다.
         }
         
         dfs(index + 1, sum + numbers[index]);
