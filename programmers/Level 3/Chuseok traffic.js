@@ -18,6 +18,9 @@ function solution(lines) {
       const date = v.split(' ');
       const time = date[1].split(':');
       const mil = parseFloat(date[2].substr(0, date[2].length - 1)) * 1000;
+      // 문자열을 부동소숫점 숫자로 변환한다. 2번째에서 특정한 위치에서 특정 문자수만큼 문자를 반환한다.
+      // 여기선  date[2].length - 1만큼 반환
+      // 그것을 1000초 곱한 것을 mil에 넣는다.
   
       let s = 3600;
       let sec = 0;
