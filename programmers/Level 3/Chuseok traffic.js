@@ -54,7 +54,7 @@ function solution(lines) {
       // 우선순위 큐에 값을 삽입하기 위해서 위치를 찾는다.
   
       pq.splice(newIdx === -1 ? pq.length : newIdx, 0, v[1]);
-      // 값을 삽입한다.
+      // 값을 삽입합니다.
   
       ans = Math.max(ans, pq.length);
     }
