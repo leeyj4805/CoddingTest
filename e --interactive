@@ -1,0 +1,143 @@
+[33mcommit 81dde1a24ca9455da0ba20d7ac5af152047d48c4[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: leebingo <leeyj4805@gmail.com>
+Date:   Wed Feb 17 21:16:43 2021 +0900
+
+    21.02.17 추석 트래픽
+
+[33mcommit bf274ebbb4184f7f11ece7f7faba2958b935ef60[m
+Author: leebingo <leeyj4805@gmail.com>
+Date:   Wed Feb 17 21:12:15 2021 +0900
+
+    파일 업로드
+
+[33mcommit 6ceee02b2362078eca7b634dda849391e3049469[m
+Author: leebingo <leeyj4805@gmail.com>
+Date:   Sat Feb 13 22:47:36 2021 +0900
+
+    :memo:21.02.13 추석 트래픽
+
+[33mcommit 8230c3723db57db53f767ed5b01fa45f6df6987b[m
+Author: leebingo <leeyj4805@gmail.com>
+Date:   Sat Feb 13 22:46:01 2021 +0900
+
+    :memo:21.02.13 멀쩡한 사각형
+
+[33mcommit 23b5433e12c740e7c11972463a9d2048ebae227a[m
+Author: leebingo <leeyj4805@gmail.com>
+Date:   Thu Feb 11 21:31:42 2021 +0900
+
+    :memo:21.02.11 추석 트래픽
+
+[33mcommit fca7b71675470415334300350f00816552a188ef[m
+Author: leebingo <leeyj4805@gmail.com>
+Date:   Thu Feb 11 20:48:47 2021 +0900
+
+    :memo:21.02.11 기능개발
+
+[33mcommit 7ea61150bfdcfbcccb50cc8a17625dca34d02ea7[m
+Author: leebingo <leeyj4805@gmail.com>
+Date:   Tue Feb 9 00:32:19 2021 +0900
+
+    :memo:21.02.09 네트워크
+
+[33mcommit c3744eb79497b48703b26bb6d8ada15b4cf5aac1[m
+Author: leebingo <leeyj4805@gmail.com>
+Date:   Mon Feb 8 23:41:00 2021 +0900
+
+    :memo:21.02.08 타겟 넘버
+
+[33mcommit 38d9ee44d1a310783d292c3d2e013512fe5e6601[m
+Author: leebingo <leeyj4805@gmail.com>
+Date:   Mon Feb 8 23:25:11 2021 +0900
+
+    :memo:21.02.08 타겟 넘버
+
+[33mcommit 5c97f72f282853ac638f21becc59f9d2e34fc349[m
+Author: leebingo <leeyj4805@gmail.com>
+Date:   Thu Feb 4 18:38:33 2021 +0900
+
+    :memo:21.02.04 섬 연결하기
+
+[33mcommit de16e9ad41cd6e3c64f23e6e2ef005e631a323c8[m
+Author: leebingo <leeyj4805@gmail.com>
+Date:   Thu Feb 4 18:32:34 2021 +0900
+
+    :memo:21.02.04 섬 연결하기
+
+[33mcommit f4ed5e9b8ef50c177d8e803e842d088ac18d23f8[m
+Author: leebingo <leeyj4805@gmail.com>
+Date:   Thu Feb 4 18:30:10 2021 +0900
+
+    :memo:21.02.04 섬 연결하기
+
+[33mcommit c7e38033a65db2524682929f2ef73ab9859620b0[m
+Author: leebingo <leeyj4805@gmail.com>
+Date:   Thu Feb 4 15:45:52 2021 +0900
+
+    :memo:21.02.04 섬 연결하기
+
+[33mcommit fbb999ac8bfecec74b169c68429e3ce7e86ec760[m
+Author: leebingo <leeyj4805@gmail.com>
+Date:   Thu Feb 4 15:15:40 2021 +0900
+
+    파일정리
+
+[33mcommit b09cf78b673c448e651d01fde669c99e42110fec[m
+Author: leebingo <leeyj4805@gmail.com>
+Date:   Thu Feb 4 15:08:37 2021 +0900
+
+    파일정리
+
+[33mcommit 268b83091d020883a40cb191dd575cb0321b6d65[m
+Author: leebingo <leeyj4805@gmail.com>
+Date:   Thu Feb 4 14:27:32 2021 +0900
+
+    :memo:21.02.04 큰 수 만들기
+
+[33mcommit 38ddbeb4f47b1eed6269b36f8597e88493eb9eae[m
+Author: leebingo <leeyj4805@gmail.com>
+Date:   Tue Feb 2 23:57:47 2021 +0900
+
+    :memo:21.02.02 조이스틱
+
+[33mcommit ff7c1c17976bb35e4115dc0a1365048199031b0d[m
+Author: leebingo <leeyj4805@gmail.com>
+Date:   Thu Jan 28 20:57:08 2021 +0900
+
+    :memo:21.01.28 두 정수 사이의 합
+
+[33mcommit 300f88eca87f7249a07674116d79e7e94789def2[m
+Author: leebingo <leeyj4805@gmail.com>
+Date:   Thu Jan 28 20:32:41 2021 +0900
+
+    :memo:21.01.28 나누어 떨어지는 숫자
+
+[33mcommit ed110113596a8ca17095f488fe6bff3c2fdfffbd[m
+Author: leebingo <leeyj4805@gmail.com>
+Date:   Wed Jan 27 20:48:35 2021 +0900
+
+    :memo:21.01.27 같은 숫자는 싫어
+
+[33mcommit f176ebfcd0db409821f1000d53359a721be68fae[m
+Author: leebingo <leeyj4805@gmail.com>
+Date:   Tue Jan 26 21:27:59 2021 +0900
+
+    :memo:카펫 문제 업로드
+
+[33mcommit bf7be738446d3d62b000ceb27ef16281e8b6deb3[m
+Author: leebingo <leeyj4805@gmail.com>
+Date:   Tue Jan 26 18:26:11 2021 +0900
+
+    :memo: 소수 찾기 문제 업로드
+
+[33mcommit 50b5a34d3496d1167d083249357567e010e97734[m
+Author: leebingo <leeyj4805@gmail.com>
+Date:   Tue Jan 26 15:34:39 2021 +0900
+
+    :memo:파일 업로드
+
+[33mcommit 71814b1ccdcb6dcbe520cb92853da2fe145f4fab[m
+Author: leebingo <leeyj4805@gmail.com>
+Date:   Tue Jan 26 15:24:10 2021 +0900
+
+    Initial commit
