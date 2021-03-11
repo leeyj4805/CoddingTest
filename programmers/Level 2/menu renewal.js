@@ -30,52 +30,81 @@
 // 만약 가장 많이 함께 주문된 메뉴 구성이 여러 개라면, 모두 배열에 담아 return 하면 됩니다.
 // orders와 course 매개변수는 return 하는 배열의 길이가 1 이상이 되도록 주어집니다.
 
+// 문제풀이 
+// 메뉴에서 모든 조합을 만들고 각 조합의 개수를 세면 된다.
+// 동일하게 겹치는 조합을 주의해야 한다. 이를 쉽게 해결하는 방법으로는
+// 처음에 각 문자열을 알파벳 순으로 정렬하는 것이다.
+// 또는 만들어진 조합의 문자열을 정렬하는 방법이다.
+
+// 이렇게 조합별로 개수를 셌다고 한다면 최종적으로는
+// 문자열의 길이가 같은 조합 중 가장 많이 나타난 조합을 찾으면 된다.
+
+// 단품메뉴들이 문자열 형식으로 담긴 배열 : order
+// 단품메뉴들의 갯수가 담긴 배열 : course
+
 function solution(orders, course) {
-    // key: 조합, value: 조합의 주문횟수
-    let candidates;
-    // 방문한 노드
-    const seen = {};
-    // 생성된 후보들
-    const answer = new Set();
-  
-    // 주문을 모두 사전순으로 정렬
-    orders = orders.map(order => order.split('').sort().join(''));
-  
-    for (const size of course) {
-      // 조합 리셋
-      candidates = {};
-  
-      // 조합이 주문된 횟수를 계산
-      for (const order of orders) countOrder(order, size);
-  
-      // 특정 길이를 가진 조합 중 주문횟수의 최대값을 찾음
-      const maxCount = Object.keys(candidates).reduce((max, candidate) => {
-        return Math.max(max, candidates[candidate]);
-      }, 0);
-  
-      // 2회 미만 주문된 후보는 제외
-      if (maxCount > 1) {
-        // 가장 긴 길이를 가진 후보를 `answer` 셋에 추가
-        for (const candidate in candidates)
-          if (candidates[candidate] === maxCount) answer.add(candidate);
-      }
-    }
-  
-    // 배열로 전환하고 사전순 정렬
-    return [...answer].sort();
-  
-    // 주어진 주문으로 만들 수 있는 모든 조합의 주문횟수를 계산 (백트래킹)
-    function countOrder(order, courseSize, index = 0, candidate = '') {
-      if (candidate.length === courseSize) {
-        candidates[candidate] = candidates[candidate] + 1 || 1;
-        return;
-      }
-  
-      for (let i = index, { length } = order; i < length; i += 1) {
-        if (seen[i]) continue;
-        seen[i] = true;
-        countOrder(order, courseSize, i + 1, candidate + order[i]);
-        seen[i] = false;
-      }
+  // key: 조합, value: 조합의 주문횟수
+  let candidates;
+  // 방문한 노드
+  const seen = {};
+  // 생성된 후보들을 객체로 넣기
+  const answer = new Set();
+  // Set(); 자료형에 관계 없이 원시 값과 객체 참조 모두 유일한 값을 저장할 수 있음
+
+  // 주문을 모두 사전순으로 정렬
+  orders = orders.map(order => order.split('').sort().join(''));
+  // split(); 문자열을 분할하는 메서드입니다.
+  // sort(); 배열 안에 있는 원소를 정렬하는 함수
+  // join();  배열 안에 있는 원소들을 연결해서 하나의 값으로 만듭니다.
+
+  for (const size of course) {
+    // 조합 리셋 - course를 포함해서 반복하고 개별적으로 속성값에 대해서 
+    // 실행하는 것이 있는지 size로 확인
+    candidates = {};
+      // 방문한 노드를 객체로 만든다.
+
+    // 조합이 주문된 횟수를 계산
+    for (const order of orders) countOrder(order, size);
+
+    // 특정 길이를 가진 조합 중 주문횟수의 최대값을 찾음
+    // keys(); candidates의 인덱스를 키 값으로 가진 새로운 배열을 반환한다.
+    // reduce(); 리듀서 함수를 실행하고 하나의 결과값을 반환한다.
+    // 즉 max + candidate = 값을 말한다.
+    const maxCount = Object.keys(candidates).reduce((max,candidate) => {
+      return Math.max(max, candidates[candidate]);
+       // max + candidate = 값의 최대값과 0을 리턴한다.
+    }, 0);
+
+    // 2회 미만 주문된 후보는 제외
+    if (maxCount > 1) {
+      // 가장 긴 길이를 가진 후보를 `answer` 셋에 추가
+      for (const candidate in candidates)
+      // candidate 변수에 candidates 객체로 접근하여 반복한다.
+        if (candidates[candidate] === maxCount) answer.add(candidate);
+        // candidate가 maxCount와 같다면 candidate를 answer에 저장한다.
     }
   }
+
+  // 배열로 전환하고 사전순 정렬
+  return [...answer].sort();
+
+  // 주어진 주문으로 만들 수 있는 모든 조합의 주문횟수를 계산 (백트래킹)
+  function countOrder(order, courseSize, index = 0, candidate = '') {
+    if (candidate.length === courseSize) {
+        // candidate의 전체 길이가 courseSize와 같다면
+      candidates[candidate] = candidates[candidate] + 1 || 1;
+        // candidate =  candidate + 1 참이라면 반환 
+      return;
+    }
+
+    for (let i = index, { length } = order; i < length; i += 1) {
+        // i가 length보다 작거나 i가 i + 1을 반복한다.
+      if (seen[i]) continue;
+        // seen[i]가 참일때까지 다음코드 실행
+      seen[i] = true;
+      seen[i] = false;
+      countOrder(order, courseSize, i + 1, candidate + order[i]);
+        // 모든 조합의 주문횟수를 countOrder에 넣는다.
+    }
+  }
+}
