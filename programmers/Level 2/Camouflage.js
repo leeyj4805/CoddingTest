@@ -26,4 +26,3 @@ function solution(clothes) {
     return answer-1;
 }
 var clothes =[["crow_mask", "face"], ["blue_sunglasses", "face"], ["smoky_makeup", "face"]]
-console.log(solution(clothes))
